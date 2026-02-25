@@ -1,10 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterScreen">
+    android:background="#3CB4E9">
+
+    <!-- LOGO -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_android_black_24dp"
+        android:contentDescription="Logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- EMAIL -->
+    <EditText
+        android:id="@+id/editEmailReg"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+
+    <!-- PASSWORD -->
+    <EditText
+        android:id="@+id/editPasswordReg"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/editEmailReg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- GENDER LABEL -->
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/editPasswordReg"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- GENDER RADIO GROUP -->
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/txtGender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp">
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:text="Female"
+            android:textColor="#FFFFFF"/>
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:text="Male"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+    <!-- COUNTRY LABEL -->
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupGender"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- COUNTRY SPINNER -->
+    <Spinner
+        android:id="@+id/spinnerCountry"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintTop_toBottomOf="@id/txtCountry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- TERMS CHECKBOX -->
+    <CheckBox
+        android:id="@+id/checkTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I accept Terms and Conditions"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/spinnerCountry"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="20dp"/>
+
+    <!-- REGISTER BUTTON -->
+    <Button
+        android:id="@+id/button_Reg"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/white"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
