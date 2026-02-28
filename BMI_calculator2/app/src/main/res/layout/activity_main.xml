@@ -21,8 +21,6 @@ android:textStyle="bold
         android:text="BMI Calculator"
        />
     <com.google.android.material.textfield.TextInputLayout
-        app:errorEnabled="true"
-        app:errorTextAppearance="@style/CustomErrorText"
     app:boxCornerRadiusTopStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
