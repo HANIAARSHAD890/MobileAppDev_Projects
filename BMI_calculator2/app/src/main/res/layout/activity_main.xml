@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightPurplish"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:textSize="25sp"
+android:textStyle="bold
+"
+        android:text="BMI Calculator"
+       />
+    <com.google.android.material.textfield.TextInputLayout
+        app:errorEnabled="true"
+        app:errorTextAppearance="@style/CustomErrorText"
+    app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:hint="Enter Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/age"
+            android:hint="Enter Age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       app:boxCornerRadiusTopStart="20dp"
+       app:boxCornerRadiusTopEnd="20dp"
+       app:boxCornerRadiusBottomStart="20dp"
+       app:boxCornerRadiusBottomEnd="20dp"
+       >
+
+       <com.google.android.material.textfield.TextInputEditText
+   android:id="@+id/weight"
+           android:hint="Enter Weight (in kg)"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           />
+  </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusTopEnd="20dp"
+        app:boxCornerRadiusBottomStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/height"
+            android:hint="Enter height (in cm)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/button1"
+        android:backgroundTint="@color/DarkPurplish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mybutton"
+        android:padding="10dp"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        app:cornerRadius="23dp" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

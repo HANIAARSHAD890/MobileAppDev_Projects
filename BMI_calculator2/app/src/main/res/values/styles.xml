@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="CustomErrorText">
+        <item name="android:textColor">@color/error_text_black</item>
+        <item name="android:background">@color/error_bg_purple</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+</resources>
